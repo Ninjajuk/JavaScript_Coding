@@ -7,18 +7,22 @@ for (let x in num){
 }
 const fruits = ["Apple", "Banana", "Strawberry", "Mango", "Cherry"];
 
-const mixedArray = [
-    { name: 'John', age: 25, city: 'New York', isAdmin: false },
-    { title: 'JavaScript Basics', pages: 150, isPublished: true, author: 'Alice' },
-    { country: 'France', population: 67000000, capital: 'Paris', landmarks: ['Eiffel Tower', 'Louvre Museum'] },
-    { person: { firstName: 'Bob', lastName: 'Smith' }, job: 'Software Developer', experience: 3 },
-    { color: 'Blue', hexCode: '#0000FF', rgb: [0, 0, 255] },
-    { fruit: 'Apple', quantity: 5, isFresh: true },
-    { temperature: 28.5, unit: 'Celsius', isHot: true },
-    { car: 'Toyota', model: 'Camry', year: 2022, isHybrid: false },
-    { isActive: true, dateJoined: new Date('2023-01-15') },
-    { student: 'Mary', grades: { math: 90, science: 85, history: 92 } }
+const similarObjects = [
+    { name: 'Alice', age: 30, city: 'Los Angeles', isAdmin: true, isActive: false, dateJoined: new Date('2022-11-10') },
+    { name: 'Bob', age: 28, city: 'San Francisco', isAdmin: false, isActive: true, dateJoined: new Date('2022-08-25') },
+    { name: 'Charlie', age: 35, city: 'Chicago', isAdmin: true, isActive: true, dateJoined: new Date('2022-09-18') },
+    { name: 'Diana', age: 27, city: 'Miami', isAdmin: false, isActive: true, dateJoined: new Date('2022-12-03') },
+    { name: 'Edward', age: 32, city: 'Seattle', isAdmin: true, isActive: false, dateJoined: new Date('2022-07-22') },
+    { name: 'Fiona', age: 29, city: 'Boston', isAdmin: false, isActive: true, dateJoined: new Date('2022-10-05') },
+    { name: 'George', age: 31, city: 'Denver', isAdmin: true, isActive: true, dateJoined: new Date('2022-06-15') },
+    { name: 'Hannah', age: 26, city: 'Austin', isAdmin: false, isActive: true, dateJoined: new Date('2022-05-08') },
+    { name: 'Ian', age: 34, city: 'Portland', isAdmin: true, isActive: false, dateJoined: new Date('2022-08-30') },
+    { name: 'Jessica', age: 33, city: 'Philadelphia', isAdmin: false, isActive: true, dateJoined: new Date('2022-11-28') }
   ];
   
+  console.log(similarObjects);
+  
+  
   console.log(mixedArray);
+  
   
