@@ -55,10 +55,23 @@ myPromise
 .then((val)=>console.log('Hi there',val))
 .catch((error)=>console.log("Promised rejected and error",error))
 
-//Example 1 Promise
+//Example 02 ends  Promise
+const mypromise1=new Promise((res,rej)=>{
+    let x=true
+    let num=[1,2,3,4,5]
+    if(x){
+    res(num.map(item=>item*10))
+    }else{
+        rej(num)
+    }
+})
+mypromise1
+.then(val=>console.log(val.filter(item=>item>40)))
+.catch(val=>console.log(val.filter(item => item > 4)))
 
 
-//Example 2 Promise
+
+//Example 3 Promise
 const firstFunction=(a,b)=>{
     return new Promise((res,rej)=>{
         const result=a+b
