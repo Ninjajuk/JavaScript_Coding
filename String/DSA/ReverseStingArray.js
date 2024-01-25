@@ -15,7 +15,7 @@ function reverseString(inputString) {
   var reversedResult = reverseString(originalString);
   console.log(reversedResult);
 
-  
+
   function reverseArray(inputArray) {
     var length = inputArray.length;
     var lastIndex = length - 1;
@@ -36,4 +36,13 @@ function reverseString(inputString) {
   var reversedArray = reverseArray(originalArray);
   console.log(reversedArray);
   
-  
+//Method 1   Using Array Methods:
+// You can convert the string to an array, reverse the array, and then join it back into a string.
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+//Method 2 
+function reverseString(str) {
+    return Array.from(str).reverse().join('');
+}
