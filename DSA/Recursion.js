@@ -1,3 +1,15 @@
+//Factorial:
+function factorial(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    } else {
+        return n * factorial(n-1);
+    }
+}
+
+console.log(factorial(5));
+
+//Fibonacci Sequence:
 function fibonacci(n) {
     if (n <= 1) {
         return n;
@@ -29,4 +41,28 @@ function power(base, exponent) {
 }
 
 console.log(power(2, 3));
+
+//GCD (Greatest Common Divisor):
+function gcd(a, b) {
+    if (b === 0) {
+        return a;
+    } else {
+        return gcd(b, a % b);
+    }
+}
+
+console.log(gcd(48, 18));
+
+//Print a Countdown:
+
+function countdown(n) {
+    if (n > 0) {
+        console.log(n);
+        countdown(n-1);
+    } else {
+        console.log("Go!");
+    }
+}
+
+countdown(5);
 
