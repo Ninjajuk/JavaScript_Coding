@@ -24,5 +24,12 @@ const similarObjects = [
   
   
   console.log(mixedArray);
+
+  //Array Methods
+
+  //isArray()
+
+  console.log(Array.isArray(similarObjects))
+
   
   
