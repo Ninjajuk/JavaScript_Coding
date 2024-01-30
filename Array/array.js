@@ -27,9 +27,20 @@ const similarObjects = [
 
   //Array Methods
 
-  //isArray()
+  //isArray() checks is if it is array or not
 
   console.log(Array.isArray(similarObjects))
 
+
+  // map(), filter(),reduce()
+
+  //some(), at(), with(), of()
+  const array = [1, 2, 3, 4, 5];
+
+// Checks whether an element is even
+const even = (element) => element % 2 === 0;
+
+console.log(array.some(even));
+// Expected output: true
   
-  
+  console.log(array.at(-1))
