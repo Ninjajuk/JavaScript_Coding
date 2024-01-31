@@ -44,3 +44,6 @@ console.log(array.some(even));
 // Expected output: true
   
   console.log(array.at(-1))
+
+  //with() => returns new array with new item added at particular index. does not change the original array
+  console.log(array.with(2,6))
