@@ -49,3 +49,9 @@ console.log(array.some(even));
   console.log(array.with(2,6))
 
   //Array.of() =>The Array.of() static method creates a new Array instance from a variable number of arguments, regardless of number or type of the arguments.
+
+  // includes()  =>The includes() method of Array instances determines whether an array includes a certain value among its entries, returning true or false as appropriate.
+  //Syntax =>  includes(searchElement);includes(searchElement, fromIndex)
+
+
+  console.log(array.includes(5))
