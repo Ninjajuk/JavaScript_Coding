@@ -47,3 +47,5 @@ console.log(array.some(even));
 
   //with() => returns new array with new item added at particular index. does not change the original array
   console.log(array.with(2,6))
+
+  //Array.of() =>The Array.of() static method creates a new Array instance from a variable number of arguments, regardless of number or type of the arguments.
