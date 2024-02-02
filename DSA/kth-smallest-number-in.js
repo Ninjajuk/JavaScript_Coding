@@ -1,3 +1,5 @@
+
+//Kth Smallest number 
 function partition(arr, low, high) {
     const pivot = arr[high];
     let i = low - 1;
