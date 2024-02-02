@@ -9,3 +9,11 @@ async function getData(){
     return resp 
 }
 getData()
+
+async function getUser(){
+  const data=await fetch('https://dummyjson.com/users/')
+  const resp=await data.json()
+  console.log(resp)
+    return resp 
+}
+getUser()
