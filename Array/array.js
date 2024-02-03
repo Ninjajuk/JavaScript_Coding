@@ -69,4 +69,6 @@ console.log(array3);
 
 //findIndex() =>The findIndex() method of Array instances returns the index of the first element in an array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
 // push()=>
-// pull()=>
+// pop()=>
+// unshift()=>
+//shift()=>
