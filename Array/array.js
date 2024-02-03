@@ -72,3 +72,6 @@ console.log(array3);
 // pop()=>
 // unshift()=>
 //shift()=>
+
+//slice()=>
+//splice()=>
