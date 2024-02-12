@@ -1,4 +1,0 @@
-const age = 13;
-const isAdult = age >= 18 ? "Adult" : age >= 13 ? "Teenager" : "Child";
-
-console.log(isAdult);

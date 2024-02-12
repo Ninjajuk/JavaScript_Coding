@@ -1,5 +1,5 @@
 
-//Callback ex starts here
+// Callback ex starts here
 // const firstFunction=(a,b,callback)=>{
 //     const result=a+b
 //     console.log("First function:-",result)
