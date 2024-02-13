@@ -71,7 +71,7 @@ mypromise1
 
 
 
-//Example 3 Promise
+//Example 3 Promise =>
 const firstFunction=(a,b)=>{
     return new Promise((res,rej)=>{
         const result=a+b
