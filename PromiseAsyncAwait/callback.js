@@ -1,4 +1,4 @@
-  // Synchronous callback example
+  // Synchronous callback example 1
 function callbackFunction(name) {
     console.log(`"Hello " ${name}`);
   }
