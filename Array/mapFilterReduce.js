@@ -10,3 +10,12 @@ const modifiedArray = num.map((value, index) => index === indexToModify ? value 
 
 console.log(modifiedArray);
 console.log(num);
+
+
+
+
+
+//Filter method
+const filteredArray = num.filter((value, index) => index !== indexToFilter);
+
+console.log(filteredArray); // Output: [2, 1, 5, 4]
