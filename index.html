@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Coding </title>
+</head>
+<body>
+    <h1>JavaScript Coding Excercise</h1>
+    <h1>JavaScript Coding Excercise</h1>
+    
+</body>
+
+<script>
+async function getData(){
+    try {
+       const resp= await fetch('https://randomuser.me/api/') 
+       const resutl=await resp.json()
+       const users = resutl.results; // Access the array of user data
+    users.forEach(element => {
+        console.log("Email: ", element.email);
+    });
+       console.log(resutl)
+    //    console.log(users)
+    } catch (error) {
+        console.error('Error fetching Dataa')
+    }
+}
+getData()
+</script>
+
+</html>
