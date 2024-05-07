@@ -16,6 +16,18 @@ console.log(num);
 
 
 //Filter method
+//Example 1 filter the array after deleting tghe item based on condtions
 const filteredArray = num.filter((value, index) => index !== indexToFilter);
 
 console.log(filteredArray); // Output: [2, 1, 5, 4]
+
+//Example 2 Filter with includes gives repetition of an array
+function getNames() {
+    const namearr = ['SAMSU', 'ANSARI', 'AJUK', 'GIDA','AJUK'];
+    const namesIncluded = namearr.filter(name => name.includes('AJUK'));
+
+    return namesIncluded.length > 0 ? namesIncluded : null;
+}
+
+const result = getNames();
+console.log(result);
