@@ -9,7 +9,8 @@ const user={
         {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
         {name:"BMW", models:["320", "X3", "X5"]},
         {name:"Fiat", models:["500", "Panda"]}
-      ]
+      ],
+    address:{delhi:"Askhok Nagar",patna:'Rajendra Nagar'}  
 }
 console.log(user)
 
@@ -29,7 +30,9 @@ for (let i = 0; i < user.cars.length; i++) {
     }
 }
 
-
+for (const city in user.address) {
+    console.log(`${city}: ${user.address[city]}`);
+}
 //#2 Loop Using forEach
 // Accessing emails
 // user.email.forEach(email => {
