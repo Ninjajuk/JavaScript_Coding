@@ -20,3 +20,12 @@ const {name, hobbies: {read, playGame}} = person;
 console.log(name); // Jack
 console.log(read); // true
 console.log(playGame); // true
+
+const arrValue = ['one', 'two', 'three'];
+
+// destructuring assignment in arrays
+const [x, y, z] = arrValue;
+
+console.log(x); // one
+console.log(y); // two
+console.log(z); // three
