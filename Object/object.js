@@ -12,7 +12,10 @@ const user={
       ],
     address:{delhi:"Askhok Nagar",patna:'Rajendra Nagar'}  
 }
-console.log(user)
+// console.log(user)
+for(let x in user){
+    console.log(x)
+}
 
 //#1-Using For loop
 // Accessing emails
