@@ -28,7 +28,6 @@ const similarObjects = [
   //Array Methods
 
   //isArray() checks is if it is array or not
-
   console.log(Array.isArray(similarObjects))
 
 
