@@ -363,9 +363,139 @@ console.log("Unique elements:", uniqueElements);
 // console.log("Array without duplicates:", arrayWithoutDuplicates);
 
 // Example 16.Write a function that sorts an array of numbers in ascending order.
-const arrayWithDuplicates = [1, 4, 2, 3, 5];
+// const arrayWithDuplicates = [1, 4, 2, 3, 5];
 //Method 1 with Inbuilt function
-const asending=arrayWithDuplicates.sort((a,b)=>a-b)   //Asending Order
-const desenedingOrder=arrayWithDuplicates.sort((a,b)=>b-a)   //Desending Order
-console.log(asending)
-console.log(desenedingOrder)
+// const asending=arrayWithDuplicates.sort((a,b)=>a-b)   //Asending Order
+// const desenedingOrder=arrayWithDuplicates.sort((a,b)=>b-a)   //Desending Order
+// console.log(asending)
+// console.log(desenedingOrder)
+
+// Example-17.Implement a function that returns the average value of numbers in an array.
+// function calculateAverage(arr) {
+//     // Check if the array is empty
+//     if (arr.length === 0) {
+//         return "Array is empty";
+//     }
+
+//     let sum = 0;
+
+//     // Iterate through the array and calculate the sum of all numbers
+//     for (let num of arr) {
+//         sum += num;
+//     }
+
+//     // Calculate the average by dividing the sum by the number of elements
+//     const average = sum / arr.length;
+
+//     return average;
+// }
+
+// // Example usage:
+// const numbers = [1, 2, 3, 4, 5];
+// const average = calculateAverage(numbers);
+// console.log("Average value:", average);
+
+
+//Example 18.Implement a function that finds the index of a specific element in an array. If the element is not found, the function should return -1.
+// function findElementIndex(arr, target) {
+//     // Iterate through the array
+//     for (let i = 0; i < arr.length; i++) {
+//         // Check if the current element is equal to the target element
+//         if (arr[i] === target) {
+//             // If found, return its index
+//             return i;
+//         }
+//     }
+//     // If the element is not found, return -1
+//     return -1;
+// }
+
+// // Example usage:
+// const array = [1, 2, 3, 4, 5];
+// const targetElement = 20;
+// const index = findElementIndex(array, targetElement);
+// console.log("Index of", targetElement, ":", index);
+
+//Example 19.Write a function that removes all falsy values (false, null, 0, “”, undefined, and NaN) from an array.
+
+//Meyhod 01
+// function removeFalsyValues(arr) {
+//     // Use filter to create a new array containing only truthy values
+//     return arr.filter(Boolean);
+// }
+
+// // Example usage:
+// const array = [0, 1, false, 2, '', 3, null, undefined, NaN, 4];
+// const filteredArray = removeFalsyValues(array);
+// console.log("Array with falsy values removed:", filteredArray);
+//Method 02
+// function removeFalsyValues(arr) {
+//     const truthyArray = [];
+
+//     // Iterate through the input array
+//     for (let i = 0; i < arr.length; i++) {
+//         // Check if the current element is truthy
+//         if (arr[i]) {
+//             // If truthy, add it to the truthyArray
+//             truthyArray.push(arr[i]);
+//         }
+//     }
+
+//     return truthyArray;
+// }
+
+// // Example usage:
+// const array = [0, 1, false, 2, '', 3, null, undefined, NaN, 4];
+// const filteredArray = removeFalsyValues(array);
+// console.log("Array with falsy values removed:", filteredArray);
+
+
+//Example 20 Implement a function that groups elements in an array based on a given condition. For example, grouping even and odd numbers into separate arrays.
+// function groupElementsByCondition(arr, conditionFunc) {
+//     const groups = {};
+
+//     // Iterate through the array
+//     for (let element of arr) {
+//         // Evaluate the condition function for the current element
+//         const conditionResult = conditionFunc(element);
+
+//         // If the condition result is not a valid key in the groups object, initialize it as an empty array
+//         if (!groups.hasOwnProperty(conditionResult)) {
+//             groups[conditionResult] = [];
+//         }
+
+//         // Push the current element to the corresponding group array
+//         groups[conditionResult].push(element);
+//     }
+
+//     return groups;
+// }
+
+// // Example usage:
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const groupedNumbers = groupElementsByCondition(numbers, num => num % 2 === 0 ? 'even' : 'odd');
+// console.log("Grouped numbers:", groupedNumbers);
+
+
+//Example 21 Write a function that determines if two strings are anagrams of each other
+// function areAnagrams(str1, str2) {
+//     // Remove non-alphanumeric characters and convert both strings to lowercase
+//     const cleanStr1 = str1.replace(/[^\w]/g, '').toLowerCase();
+//     const cleanStr2 = str2.replace(/[^\w]/g, '').toLowerCase();
+
+//     // Sort the characters of both strings
+//     const sortedStr1 = cleanStr1.split('').sort().join('');
+//     const sortedStr2 = cleanStr2.split('').sort().join('');
+
+//     // Check if the sorted strings are equal
+//     return sortedStr1 === sortedStr2;
+// }
+
+// // Example usage:
+// const string1 = "listen";
+// const string2 = "silent";
+// if (areAnagrams(string1, string2)) {
+//     console.log(string1 + " and " + string2 + " are anagrams.");
+// } else {
+//     console.log(string1 + " and " + string2 + " are not anagrams.");
+// }
