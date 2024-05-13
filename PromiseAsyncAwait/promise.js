@@ -69,6 +69,40 @@ mypromise1
 .then(val=>console.log(val.filter(item=>item>40)))
 .catch(val=>console.log(val.filter(item => item > 4)))
 
+const mypromise2 = new Promise((res, rej) => {
+    let x = true;
+    let num = [1, 2, 3, 4, 5];
+    if (x) {
+        res(num.map(item => item * 10));
+    } else {
+        rej(num);
+    }
+});
+
+mypromise2
+    .then(val => {
+        // Filter values greater than 40
+        return val.filter(item => item > 40);
+    })
+    .then(filteredValues => {
+        // Further processing of filtered values
+        console.log("Filtered values greater than 40:", filteredValues);
+
+        // Example: Sum of filtered values
+        const sum = filteredValues.reduce((acc, curr) => acc + curr, 0);
+        console.log("Sum of filtered values:", sum);
+
+        // Return the sum for further processing
+        return sum;
+    })
+    .then(result => {
+        // Further action after addition
+        console.log("Further action after addition:", result * 2);
+    })
+    .catch(err => {
+        // Handle errors if the promise is rejected
+        console.error("Error:", err);
+    });
 
 
 //Example 3 Promise =>
