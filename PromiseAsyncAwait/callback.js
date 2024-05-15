@@ -20,19 +20,6 @@ function displayResult(result){
 add(10,10,displayResult)
   //Example 2 ends  here
 
-//Synchronous Example 02
-const numbers = [1, 2, 3, 4, 5];
-
-// Synchronous callback function
-function squareNumber(num) {
-  console.log(num * num);
-}
-
-// Using forEach with a synchronous callback
-numbers.forEach(squareNumber);
-
-  
-
 
   //Example 01 Asynchronous callback example
 function simulateAsyncRequest(callback) {
@@ -53,23 +40,37 @@ function simulateAsyncRequest(callback) {
 //Asynchronous Example 01
 
 
-//Example 2 Asynchronous function simulating file reading
-function readFileAsync(fileName, callback) {
-    console.log(`Reading file: ${fileName}`);
-    setTimeout(function () {
-      const content = "File content goes here.";
-      console.log("File read completed!");
-      callback(content); // Pass the content to the callback
-    }, 2000); // Simulate a 2-second delay
-  }
-  
-  // Asynchronous callback function
-  function processFileContent(content) {
-    console.log(`Processing file content: ${content}`);
-  }
-  
-  // Using the readFileAsync function with an asynchronous callback
-  readFileAsync("example.txt", processFileContent);
+//Example 2 Call Back Hell Pyramid of doom
+function firstFunction(callback) {
+  // Simulate a code delay
+  setTimeout(function () {
+    console.log("First function called");
+    callback();
+  }, 1000);
+}
+
+function secondFunction(callback) {
+  console.log("Second function called");
+  callback();
+}
+
+function thirdFunction(callback) {
+  console.log("Third function called");
+  callback();
+}
+
+function fourthFunction() {
+  console.log("Fourth function called");
+}
+
+// Chaining the functions correctly using callbacks
+firstFunction(function() {
+  secondFunction(function() {
+    thirdFunction(function() {
+      fourthFunction();
+    });
+  });
+});
 
 
   // Example 3  Asynchronous callback function for an event listener
