@@ -14,7 +14,8 @@ const user={
 }
 // console.log(user)
 for(let x in user){
-    console.log(x)
+    console.log(x)  //will give all the key 
+    console.log(user[x])   //will give all the values pf property
 }
 
 //#1-Using For loop
