@@ -131,3 +131,5 @@ console.log(String.prototype.trimLeft.name === "trimStart");
 
 //Example 15
 console.log(Math.max());
+
+//Example 16
