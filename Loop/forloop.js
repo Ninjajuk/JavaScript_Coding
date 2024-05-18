@@ -130,7 +130,7 @@
 
 
 
-//Example 02 if its an object
+//Example 02 if its an object from api call
 
 const jsonparse = `{
     "item1": {
