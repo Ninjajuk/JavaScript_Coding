@@ -1,3 +1,5 @@
+
+//Example to get all the elements in an array
 function getNames() {
     const namearr = ['SAMSU', 'ANSARI', 'AJUK', 'GIDA','AJUK'];
     const namesIncluded = namearr.filter(name => name.includes('AJUK'));
