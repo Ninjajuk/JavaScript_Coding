@@ -12,7 +12,7 @@ const user={
       ],
     address:{delhi:"Askhok Nagar",patna:'Rajendra Nagar'}  
 }
-// console.log(user)
+// console.log(user.cars)
 for(let x in user){
     console.log(x)  //will give all the key 
     console.log(user[x])   //will give all the values pf property
