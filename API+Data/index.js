@@ -136,3 +136,16 @@ const user=[
           "version": "1.4"
         }
       }
+
+      const randomQuotes={
+        "_id": "ZqHAX7IvZk",
+        "content": "If you want to go east, don't go west.",
+        "author": "Ramakrishna",
+        "tags": [
+          "Wisdom"
+        ],
+        "authorSlug": "ramakrishna",
+        "length": 38,
+        "dateAdded": "2021-04-08",
+        "dateModified": "2023-04-14"
+      }
