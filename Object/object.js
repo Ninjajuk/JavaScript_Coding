@@ -71,3 +71,10 @@ for (const { name, models } of cars) {
         console.log(` - ${model}`);
     }
 }
+//Using forEach Method
+cars.forEach(({ name, models }) => {
+    console.log(`Car id:-${name}`);
+    models.forEach(model => {
+        console.log(` - ${model}`);
+    });
+});
