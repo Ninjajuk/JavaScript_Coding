@@ -193,4 +193,10 @@ for (const key in jobject) {
     }
 }
 
-
+//Using Destructurring
+for (const key in parsed) {
+    if (Object.hasOwnProperty.call(parsed, key)) {
+        const { quantity, product: { title } } = parsed[key];
+        console.log(`Product: ${title}, Quantity: ${quantity}`);
+    }
+}
