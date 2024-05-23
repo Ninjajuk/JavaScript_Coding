@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1>table</h1>
+    <table>
+        <caption>Student Data</caption>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td colspan="2">Samsuddin Anari</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td colspan="2">Ajuk Gida</td>
+            <td>25</td>
+        </tr>
+    </table>
+    
+</body>
+<style>
+    table{
+        border: 2px solid #ddd;
+        width: 400px;
+        border-collapse: collapse;
+    }
+    td,th{
+        border:1px solid green
+    }
+    tr:nth-child(odd){
+        background-color: rebeccapurple;
+    }
+</style>
+</html>
