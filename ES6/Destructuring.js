@@ -50,7 +50,13 @@ const {
 // console.log(id);
 console.log(fullname); 
 // console.log(occupation); 
+// Destructure fullname and occupation for each engineer and create an array
+const engineerDetails = Object.values(employees.engineers).map(({ fullname, occupation }) => ({
+  fullname,
+  occupation
+}));
 
+console.log(engineerDetails);
 
 //Example 03
 var data = {
