@@ -198,7 +198,7 @@ for (const key in parsed) {
         console.log(`Product: ${title}, Quantity: ${quantity}`);
     }
 }
-//Using Destructurring
+//Using Destructurring 
 for (const key in parsed) {
     const { quantity, product: { title } } = parsed[key];
     console.log(`Product: ${title}, Quantity: ${quantity}`);

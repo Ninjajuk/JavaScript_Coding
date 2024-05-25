@@ -17,10 +17,61 @@ const person = {
 // nested destructuring 
 const {name, hobbies: {read, playGame}} = person;
 
-console.log(name); // Jack
-console.log(read); // true
-console.log(playGame); // true
+console.log(name); 
+console.log(read); 
+console.log(playGame);
 
+//Example 2
+const employees = {
+  engineers: {
+      0: {
+          id: 1,
+          fullname: "John Doe",
+          occupation: "Back-end Engineer"
+      },
+      1: {
+          id: 2,
+          fullname: "Jane Doe",
+          occupation: "Front-end Engineer"
+      },
+  }
+};
+
+const {
+  engineers: {
+      1: {
+          id,
+          fullname,
+          occupation,
+      },
+  },
+} = employees;
+
+// console.log(id);
+console.log(fullname); 
+// console.log(occupation); 
+
+
+//Example 03
+var data = {
+  title: "title1",
+  bar: "asdf",
+  innerData: [
+     {
+      title: "inner-title1",
+      foo: "asdf"
+     },
+     {
+      title: "inner-title2",
+      foo: "asdf"
+     }
+  ]
+};
+
+var innerData = JSON.parse(JSON.stringify([data, ...data.innerData], ["title"]))
+                                                                    
+console.log(innerData);
+//Example 3 ends above
 const arrValue = ['one', 'two', 'three'];
 
 // destructuring assignment in arrays
