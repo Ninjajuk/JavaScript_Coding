@@ -26,12 +26,12 @@ const employees = {
   engineers: {
       0: {
           id: 1,
-          fullname: "John Doe",
+          fullname: "Samsuddin Asnari",
           occupation: "Back-end Engineer"
       },
       1: {
           id: 2,
-          fullname: "Jane Doe",
+          fullname: "Ajuk Gida",
           occupation: "Front-end Engineer"
       },
   }
