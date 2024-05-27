@@ -1,6 +1,6 @@
 
 Array.prototype.sam='Samsu'
-
+const num1=[1,2,5,6]
 const num=[1,2,3,4,5]
 for (let x in num){
     console.log(x)
