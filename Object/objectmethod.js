@@ -8,3 +8,8 @@ for (const name in example) {
     console.log(name)
   }
 }
+
+
+//Object.groupBy()
+
+//Syntax  =>  Object.groupBy(items, callbackFn)
