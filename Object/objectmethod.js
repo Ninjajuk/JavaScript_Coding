@@ -10,6 +10,10 @@ for (const name in example) {
 }
 
 
-//Object.groupBy()
+//02:>   Object.groupBy()
 
-//Syntax  =>  Object.groupBy(items, callbackFn)
+ Object.groupBy(items, callbackFn)
+
+//03:>   Object.is()
+
+//Syntax  => Object.is(value1, value2)
