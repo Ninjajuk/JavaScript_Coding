@@ -14,6 +14,6 @@ for (const name in example) {
 
  Object.groupBy(items, callbackFn)
 
-//03:>   Object.is()
+//03:>   Object.is()  checks wheteher two values are equal or not
 
 //Syntax  => Object.is(value1, value2)
