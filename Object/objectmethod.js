@@ -17,3 +17,7 @@ for (const name in example) {
 //03:>   Object.is()  checks wheteher two values are equal or not
 
 //Syntax  => Object.is(value1, value2)
+
+//04 Object.keys()     mnethod returns an array with all the keys of the object
+
+//05  Object.values()   method returns an array with all the values of the object.
