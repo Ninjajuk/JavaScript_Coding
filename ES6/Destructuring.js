@@ -101,3 +101,8 @@ function joinFirstLastName({ firstName, lastName }) { // we create firstName and
     sex: "M"
   }
   console.log(joinFirstLastName(person1)); 
+//
+
+function nameById(){
+  console.log('Samsu')
+}
