@@ -21,7 +21,7 @@ function getProductQuantities(unit) {
     return quantities;
   }
   
-  // Example usage:
+  // Example usage:01
   const productUnit = 'gm';
   const availableQuantities = getProductQuantities(productUnit);
   
