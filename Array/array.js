@@ -1,5 +1,4 @@
 
-Array.prototype.sam='Samsu'
 const num1=[1,2,5,6]
 const num=[1,2,3,4,5]
 for (let x in num){
@@ -57,8 +56,6 @@ console.log(array.some(even));
 
   // includes()  =>The includes() method of Array instances determines whether an array includes a certain value among its entries, returning true or false as appropriate.
   //Syntax =>  includes(searchElement);includes(searchElement, fromIndex)
-
-
   console.log(array.includes(5))
 
   // concat() => The concat() method of Array instances is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
@@ -184,4 +181,5 @@ console.log(array3);
   let onlyUpdatedProducts = updatedProducts.filter((product, index) => product.price !== products[index].price);
   
   console.log(onlyUpdatedProducts);
+
   
