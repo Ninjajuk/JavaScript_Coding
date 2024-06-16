@@ -43,16 +43,16 @@ const chooseStyle = (status) => {
         colorClass: 'bg-yellow-200 text-yellow-600',
         icon: <FaTruck/>
       };
-    // case 'delivered':
-    //   return {
-    //     colorClass: 'bg-green-200 text-green-600',
-    //     iconClass: <FaBoxOpen />
-    //   };
-    // case 'received':
-    //   return {
-    //     colorClass: 'bg-green-200 text-green-600',
-    //     iconClass: <FaCheckCircle /> 
-    //   };
+    case 'delivered':
+      return {
+        colorClass: 'bg-green-200 text-green-600',
+        iconClass: <FaBoxOpen />
+      };
+    case 'received':
+      return {
+        colorClass: 'bg-green-200 text-green-600',
+        iconClass: <FaCheckCircle /> 
+      };
     case 'cancelled':
       return {
         colorClass: 'bg-red-200 text-red-600',
