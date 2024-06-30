@@ -4,7 +4,7 @@ const num=[1,2,3,4,5]
 for (let x in num){
     console.log(x)
 }
-const fruits1 = ["Apple", "Banana", "Strawberry", "Mango", "Cherry"];
+const fruits1 = ["Apple", "Banana", "Strawberry", "Mango", "Cherry"]
 
 const similarObjects = [
     { name: 'Alice', age: 30, city: 'Los Angeles', isAdmin: true, isActive: false, dateJoined: new Date('2022-11-10') },
