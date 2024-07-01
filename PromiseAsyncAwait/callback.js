@@ -73,12 +73,5 @@ firstFunction(function() {
 });
 
 
-  // Example 3  Asynchronous callback function for an event listener
-function handleButtonClick() {
-    console.log("Button clicked!");
-  }
-  
-  // Adding an event listener with an asynchronous callback
-  const button = document.getElementById("myButton");
-  button.addEventListener("click", handleButtonClick);
+
   
