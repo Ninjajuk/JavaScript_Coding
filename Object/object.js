@@ -78,3 +78,24 @@ cars.forEach(({ name, models }) => {
         console.log(` - ${model}`);
     });
 });
+
+
+
+const datasets = {
+    dataset1: { id: 1, name: "Dataset One", value: 100 },
+    dataset2: { id: 2, name: "Dataset Two", value: 200 },
+    dataset3: { id: 3, name: "Dataset Three", value: 300 },
+    dataset4: { id: 4, name: "Dataset Four", value: 400 },
+    dataset5: { id: 5, name: "Dataset Five", value: 500 }
+};
+
+const matchingIds = [2];
+
+const matchingDatasets = Object.values(datasets).filter(dataset => matchingIds.includes(dataset.id));
+
+matchingDatasets.forEach(dataset => {
+    console.log(`ID: ${dataset.id}`);
+    console.log(`Name: ${dataset.name}`);
+    console.log(`Value: ${dataset.value}`);
+    console.log('---');
+});
