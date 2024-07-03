@@ -1,5 +1,5 @@
 const user={
-    name:'SAMSUDDIN ANSRI',
+    name:'SAMSUDDIN ANSARI',
     userName:'samsu',
     password:'123456',
     phone:'7542067763',
