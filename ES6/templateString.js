@@ -1,11 +1,9 @@
 //Templateliterals
+const name = 'John';
+const greeting = `Hello, ${name}!`;
+console.log(greeting); // Hello, John!
 
-//Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.
-`string text`
-
-`string text line 1
- string text line 2`
-
-`string text ${expression} string text`
-
-tagFunction`string text ${expression} string text`
+const multiLine = `This is
+a multi-line
+string.`;
+console.log(multiLine);
