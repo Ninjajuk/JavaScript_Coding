@@ -1,10 +1,10 @@
 //Map
-//Example 1 create new array withput modifying existing  array
+//Example 1 create new array without modifying existing  array
 const num=[2,1,3,5,4]
 console.log(num.map((i)=>i*10))
 
 
-//Example 2 We can mpdify the existing array at a partivular index only
+//Example 2 We can modify the existing array at a partivular index only
 const indexToModify = 2; // Index you want to modify
 const modifiedArray = num.map((value, index) => index === indexToModify ? value * 10 : value);
 
@@ -16,7 +16,7 @@ console.log(num);
 
 
 //Filter method
-//Example 1 filter the array after deleting tghe item based on condtions
+//Example 1 filter the array after deleting the item based on condtions
 const filteredArray = num.filter((value, index) => index !== indexToFilter);
 
 console.log(filteredArray); // Output: [2, 1, 5, 4]

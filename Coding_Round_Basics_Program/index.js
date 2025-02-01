@@ -60,7 +60,6 @@ const sorteddecarray=numbers.sort((a,b)=>b-a) //Sorting in decreasing order.Sort
 console.log('Second Largest Element is ',sorteddecarray[1])
 
 //Normal Function
-
 function findSecondLargest(arr) {
     if (arr.length < 2) {
         return "Array should contain at least two elements";
