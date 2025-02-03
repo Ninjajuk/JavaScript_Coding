@@ -54,7 +54,6 @@ function gcd(a, b) {
 console.log(gcd(48, 18));
 
 //Print a Countdown:
-
 function countdown(n) {
     if (n > 0) {
         console.log(n);
