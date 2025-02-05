@@ -1,4 +1,4 @@
-//Example #03 finds the second largest number in an array.
+//Example #02 finds the second largest number in an array.
 
 //Using Methods
 const sorteddecarray=numbers.sort((a,b)=>b-a) //Sorting in decreasing order.Sorting method modify the original array
